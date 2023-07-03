@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Righteous", cursive;
+  background-color: #a7f0c2;
+  text-align: center;
+}
+
+.item {
+  margin: 50px auto;
+  width: 500px;
+  padding: 20px;
+  background-color: #00b894;
+  border-radius: 1rem;
+  position: relative;
+}
+.item .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-bottom: 100px;
+}
+.item .title h2 {
+  font-size: 30px;
+}
+.item .title h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.item .white {
+  background-color: white;
+  padding-top: 100px;
+  padding: 100px 10px 10px 10px;
+  border-radius: 10px;
+}
+.item .white .info {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 20px;
+}
+.item .white .info div {
+  background-color: wheat;
+  padding: 10px 20px;
+  border-radius: 2rem;
+}
+.item .white .status {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #00b894;
+}
+.item .white .rate {
+  margin-top: 30px;
+}
+.item .white .rate .type {
+  display: flex;
+  align-items: center;
+}
+.item .white .rate .type .typeName {
+  width: 20%;
+  color: #00b894;
+}
+.item .white .rate .type .numberRate {
+  width: 10%;
+}
+.item .white .rate .type .line {
+  width: 70%;
+  height: 5px;
+  background-color: rgb(214, 214, 214);
+}
+.item .white .rate .type .line .innerLine {
+  /* width: 70%; */
+  height: 5px;
+  /* background-color: #00b894; */
+}
+.item .itemPicture {
+  position: absolute;
+  width: 50%;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}

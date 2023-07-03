@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Righteous", cursive;
+    background-color: #a7f0c2;
+    text-align: center;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #0e4a37;
+}
+h1 {
+    color: rgb(255, 196, 46);
+}
+h1 span {
+    color: #009d6c;
+}
+a {
+    text-decoration: none;
+}
+.list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+.list .card {
+    background-color: rgba(112, 178, 112, 0.575);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.list .card h2 {
+    width: 100%;
+    background-color: #009d6c;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    font-weight: 200;
+}
+.list .card .picture {
+    width: 60%;
+    padding: 15px;
+    margin: auto;
+}
+.arrow {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.arrow button i {
+    color: #0e4a37;
+}
+@media (max-width: 992px) {
+    .list {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
